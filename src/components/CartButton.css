@@ -3,7 +3,7 @@
     justify-self:flex-end;
     position:absolute;
     background-color: #B08BBB;
-    font-size:1.4rem;
+    font-size:1.1rem;
     color: #F5F5DC;
     padding-right: 0.5rem;
     margin:1rem;
@@ -11,7 +11,7 @@
    border:1px solid #6C00FF;
 }
 img{
-    height:3rem;
+    height:1.8rem;
     display:flex;
     align-self:center;
     padding:0.3rem;
@@ -21,8 +21,8 @@ img{
     justify-content:center;
     align-items:center;
     border-radius:2rem;
-    width:2rem;
-    height:2rem;
+    width:1.5rem;
+    height:1.5rem;
     background-color:#F5F5DC;
     font-size:1.2rem;
     color:#6C00FF;
@@ -32,11 +32,11 @@ img{
     display:flex;
     align-self:center;
     padding:0.3rem;
-    font-size:1.8rem;
+    font-size:1.4rem;
     -webkit-text-stroke:0.5px #6C00FF;
     text-stroke: 0.5px #6C00FF;
 }
 .header-left:hover {
     cursor:pointer;
-    background:radial-gradient(#B5D5C5,#B08BBB);
+    background:radial-gradient(#B08BBB,#B5D5C5);
 }

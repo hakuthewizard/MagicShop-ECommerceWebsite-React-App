@@ -34,6 +34,9 @@
     color: #ECA869;
     font-size:1.4rem;
   }
+  .add-remove-buttons:hover{
+    cursor:pointer;
+  }
   .cart-item-amount {
     -webkit-text-stroke:0.9px #6C00FF;
     text-stroke: 0.9px #6C00FF;

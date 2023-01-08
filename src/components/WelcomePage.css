@@ -54,6 +54,7 @@
 }
 .magic-shop-btn:hover{
     cursor:pointer;
+    background:radial-gradient(#B08BBB,#B5D5C5);
 }
 .header-magicverse-welcome > span {
     -webkit-text-stroke:1px #6C00FF;
