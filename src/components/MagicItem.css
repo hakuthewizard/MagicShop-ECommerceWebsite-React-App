@@ -1,0 +1,52 @@
+.magic-grid-item {
+    align-self:center;
+    display:grid;
+    padding:0.5rem;
+
+}
+.magic-grid-item > button {
+    all:unset;
+    color: #fff;
+    background-color: #B08BBB;
+    border:1.5px solid #6C00FF;
+    border-radius:1rem;
+    font-size:1.1rem;
+    width: 6.5rem;
+    -webkit-text-stroke:0.6px #6C00FF;
+    text-stroke: 0.6px #6C00FF;
+    justify-self:center;
+    margin:0.9rem;
+}
+.magic-grid-item > button:hover {
+    cursor:pointer;
+}
+.item-image-default {
+    width:12rem;
+    border:2px solid #6C00FF;
+    border-radius: 2.5rem;
+    height:12rem;
+    display:grid;
+    justify-self:center;
+    justify-content:center;
+}
+.item-image-default  > img {
+    width:5.5rem;
+    height:5.5rem;
+}
+.magic-item-title {
+    color: #ECA869;
+    font-size: 1.6rem;
+    -webkit-text-stroke:0.3px #6C00FF;
+    text-stroke: 0.3px #6C00FF;
+}
+.magic-item-description {
+    font-size: 1rem;
+    color:#B08BBB;
+}
+.magic-item-price {
+    padding:0.2rem;
+    color: #B5D5C5;
+    -webkit-text-stroke:0.9px #6C00FF;
+    text-stroke: 0.9px #6C00FF;
+    font-size:1.4rem;
+}

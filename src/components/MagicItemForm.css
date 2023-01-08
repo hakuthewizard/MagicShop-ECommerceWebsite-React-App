@@ -1,0 +1,21 @@
+.magic-add-to-cart {
+    all:unset;
+    color: #fff;
+    background-color: #B08BBB;
+    border:1.5px solid #6C00FF;
+    border-radius:1rem;
+    font-size:1.3rem;
+    width: 6rem;
+    -webkit-text-stroke:0.6px #6C00FF;
+    text-stroke: 0.6px #6C00FF;
+    justify-self:center;
+    margin:0.8rem;
+    text-align:center;
+}
+.magic-add-to-cart:hover {
+    cursor:pointer;
+}
+.magic-item-form {
+    font-size:1rem;
+    
+}

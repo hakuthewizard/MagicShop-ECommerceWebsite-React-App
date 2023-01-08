@@ -1,0 +1,11 @@
+input {
+    width: 3rem;
+    border-radius: 5px;
+    border: 1px solid #6C00FF;
+    font: inherit;
+    padding-left: 0.5rem;
+    color: #B08BBB ;
+    background-color:#B5D5C5;
+    -webkit-text-stroke:0.6px #6C00FF;
+    text-stroke: 0.6px #6C00FF;
+  }

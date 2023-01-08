@@ -1,0 +1,42 @@
+.header-left{
+    display:flex;
+    justify-self:flex-end;
+    position:absolute;
+    background-color: #B08BBB;
+    font-size:1.4rem;
+    color: #F5F5DC;
+    padding-right: 0.5rem;
+    margin:1rem;
+    border-radius:1.2rem;
+   border:1px solid #6C00FF;
+}
+img{
+    height:3rem;
+    display:flex;
+    align-self:center;
+    padding:0.3rem;
+}
+.background-circle-cart{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:2rem;
+    width:2rem;
+    height:2rem;
+    background-color:#F5F5DC;
+    font-size:1.2rem;
+    color:#6C00FF;
+    margin:0.5rem;
+}
+.header-left-cart{
+    display:flex;
+    align-self:center;
+    padding:0.3rem;
+    font-size:1.8rem;
+    -webkit-text-stroke:0.5px #6C00FF;
+    text-stroke: 0.5px #6C00FF;
+}
+.header-left:hover {
+    cursor:pointer;
+    background:radial-gradient(#B5D5C5,#B08BBB);
+}

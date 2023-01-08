@@ -1,0 +1,17 @@
+.header {
+    display:grid;
+    width:99%;
+    justify-content:space-between;
+    color:#B08BBB;
+    margin:1rem;
+}
+
+.header-magicverse{
+font-size: 2.3rem;
+-webkit-text-stroke:1px #6C00FF;
+text-stroke: 1.5px #6C00FF;
+}
+.header-wizardry {
+    color: #ECA869;
+    font-size:1.1rem;
+}
