@@ -3,6 +3,7 @@ import './ShoppingCartPage.css';
 import { useContext } from "react";
 import CartContext from './store/cart-context';
 import CartItem from "./CartItem";
+import { NavLink } from "react-router-dom";
 
 const ShoppingCart = (props) => {
     const cartCtx = useContext(CartContext);
@@ -12,7 +13,7 @@ const ShoppingCart = (props) => {
     const hasItems = cartCtx.magicitems.length>0;
     
     const cartItemRemoveHandler = id => {
-cartCtx.removeMagicItem(id);
+    cartCtx.removeMagicItem(id);
     }
     const cartItemAddHandler = magicitem => {
         cartCtx.addMagicItem({...magicitem, amount:1});
@@ -48,7 +49,7 @@ return(
        
         <span className="shopping-cart-total-and-complete">
             <span>Total ({totalAmount})</span>
-            {hasItems && <button>Complete Order</button> }
+            <NavLink style={{ all: 'unset' }} to="/loginpage" >{hasItems && <button className='complete-order-btn'>Complete Order</button> }</NavLink>
         </span>
         </section> 
     </div>

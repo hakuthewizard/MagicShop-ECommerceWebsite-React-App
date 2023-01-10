@@ -2,9 +2,6 @@
 import './WelcomePage.css';
 import React, {useState} from 'react';
 import {NavLink} from 'react-router-dom'
-
-import stars from './images/stars.gif'
-import frillypinkdreams from './images/frillypinkdreams.gif'
 const WelcomePage = () => {
     return (
         

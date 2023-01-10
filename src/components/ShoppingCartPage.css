@@ -26,7 +26,7 @@
    align-items:flex-end;
    margin-top:1rem;
 }
-.shopping-cart-total-and-complete > button {
+.complete-order-btn {
     all:unset;
     border: 1.1px solid #6C00FF;
     border-radius: 1rem;
@@ -72,7 +72,7 @@
             display:none;
         }
 }
-.shopping-cart-total-and-complete > button:hover {
+.complete-order-btn:hover {
     cursor:pointer;
     background:radial-gradient(#B5D5C5,#B08BBB);
 
