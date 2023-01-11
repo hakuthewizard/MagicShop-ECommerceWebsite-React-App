@@ -5,15 +5,13 @@ import './CompleteOrderForm.css';
 //in progress
 const CompleteOrderForm = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(localStorage.getItem('isLoggedIn') || false);
-const [forUserMessage, setForUserMessage] = useState("");
+    const [forUserMessage, setForUserMessage] = useState("");
 
     const wizardNameRef = useRef();
     const userPasswordRef = useRef();
 
-
-   
-
     const submitHandler = (event) => {
+        event.preventDefault();
         const wizardName = wizardNameRef.current.value;
         const password = userPasswordRef.current.value;
         event.preventDefault();
@@ -26,10 +24,11 @@ const [forUserMessage, setForUserMessage] = useState("");
             localStorage.setItem('isLoggedIn', true);
             setIsLoggedIn(true);
             setForUserMessage("logged in! welcome to the magic world")
-            window.location.href = '/magicshoppingcart';
-
-        } else {
-        
+            window.location.href = '/addressandpaymentinfo';
+            setTimeout(() => {
+                window.location.href = '/addressandpaymentinfo';
+            },3000)
+        } else  {
             setForUserMessage("all fields are required");
             setTimeout(() => {
                 setForUserMessage("");
@@ -45,10 +44,11 @@ const [forUserMessage, setForUserMessage] = useState("");
             <input ref={wizardNameRef}/>
             <label>Password</label>
             <input ref={userPasswordRef} type='password'/>
-            <button className="login-btn">Login</button>
+            <NavLink style={{ textDecoration: 'none'}} to="/addressandpaymentinfo"><button onClick={submitHandler} className="login-btn">Login</button></NavLink>
         </form>
-        {forUserMessage  && <p className='usermessage'>{forUserMessage }</p>}
+        {forUserMessage  && <p className='usermessage'>{forUserMessage}</p>}
         </div>
     )
 }
+
 export default CompleteOrderForm;
