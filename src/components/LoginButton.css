@@ -4,8 +4,6 @@
     font-size:1.2rem;
     width:6rem;
     margin-top:0.7rem;
-    margin-bottom:0.7rem;
-    color: #F5F5DC;
     border-radius:1.2rem;
    border:1px solid #6C00FF;
    text-align:center;
@@ -13,4 +11,7 @@
    text-stroke: 0.8px #6C00FF;
    color: #ECA869;
    background: #B5D5C5;
+}
+.login-button-header:hover {
+    background: #5DA480;
 }

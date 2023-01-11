@@ -1,0 +1,118 @@
+.checkout-container {
+    display: flex;
+    justify-content: center;
+    gap:10rem;
+    width:100%;
+    margin-left:0;
+}
+h2 {
+    text-align:center;
+}
+
+
+.personal-info {
+    display:grid;
+    color:#6C00FF;
+}
+.address-information {
+    display:grid;
+
+}
+.personal-info > input {
+    font-family: Helvetica;
+    margin:0.2rem;
+    width:20rem;
+    height:2rem;
+    color:#6C00FF;
+    border-radius: 5px;
+    border: 1px solid #6C00FF;
+    padding-left: 0.5rem;
+    color: #B08BBB ;
+    background-color:#B5D5C5;
+    font-family:Helvetica;
+    color:#6C00FF;
+}
+.personal-information > input {
+    font-family: Helvetica;
+    color: #6C00FF;
+}
+.personal-info > input::placeholder {
+    font-family:Helvetica;
+    -webkit-text-stroke:none;
+    text-stroke: none;
+    color: #B08BBB ;
+    background-color:#B5D5C5;
+}
+.payment-info-ccv-date >input::placeholder {
+    font-family:Helvetica;
+    -webkit-text-stroke:none;
+    text-stroke: none;
+    color: #B08BBB ;
+    background-color:#B5D5C5;
+}
+.payment-info-ccv-date >input {
+    font-family:Helvetica;
+    margin:0.2rem;
+    width:9.8rem;
+    height:2rem;
+    color:#6C00FF;
+    background-color:#B5D5C5;
+    border-radius: 5px;
+}
+input[type="date"] {
+    font-family:Helvetica;
+    color: #B08BBB ;
+    border-radius: 5px;
+    background-color:#B5D5C5;
+    
+    
+}
+
+.payment-information {
+    display:grid;
+    
+}
+.checkout-button {
+    all:unset;
+    text-align:center;
+    margin-top:1rem;
+    color:#6C00FF;
+    border: 2px solid #6C00FF;
+    border-radius: 2rem;
+    background:#B5D5C5;
+    
+}
+.warningmessage {
+    color:#ECA869;
+    text-align:center;
+}
+.addresspageheader {
+    color: #ECA869;
+    font-size: 2rem;
+    -webkit-text-stroke:0.3px #6C00FF;
+    text-stroke: 0.3px #6C00FF;
+}
+.cart-summary {
+    display:grid;
+    justify-content:center;
+    align-items:center;
+    color: #B5D5C5;
+    font-size: 1.5rem;
+    -webkit-text-stroke:1px #6C00FF;
+    text-stroke: 1px #6C00FF;
+
+}
+.cart-summary > .cart-items-total {
+    justify-self:flex-end;
+    -webkit-text-stroke:1.2px #6C00FF;
+    text-stroke: 1.2px #6C00FF;
+    color:  #ECA869;
+    margin-bottom:4rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .checkout-container{
+        display:grid;
+        width:100%;
+    }
+}

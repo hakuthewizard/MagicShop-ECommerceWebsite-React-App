@@ -9,7 +9,6 @@ const Header = () => {
             <div className="header">
             <NavLink style={{color: 'inherit', textDecoration: 'none' }} to="/welcomepage"><span className='header-magicverse'>MAGICVERSE</span></NavLink>
             <span  className='header-wizardry'>Wizardry & Spellworks</span>
-            <LoginButton/>
             <CartButton/>
 
             </div>

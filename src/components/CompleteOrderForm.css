@@ -16,14 +16,14 @@
 }
 .login-form > input {
     border:2px solid #6C00FF;
-    color: #B08BBB ;
+
     width: fit-content;
     background-color: transparent;
     font-size:1.5rem;
     font-family: 'Spicy Rice';
-   color:#ECA869;
-   -webkit-text-stroke:0.7px #6C00FF;
-   text-stroke: 0.7px #6C00FF;
+   color: #5DA480;
+   -webkit-text-stroke:1px #6C00FF;
+   text-stroke: 1px #6C00FF;
 }
 .login-form > select {
     border:2px solid #6C00FF;
@@ -59,12 +59,15 @@
         border-radius:1.2rem;
        border:1px solid #6C00FF;
        text-align:center;
-       color: #ECA869;
-       background: transparent;
        -webkit-text-stroke:0.8px #6C00FF;
        text-stroke: 0.8px #6C00FF;
+       color: #ECA869;
+       background: #B5D5C5;
        align-self:flex-end;
-    
+}
+.login-btn:hover {
+    cursor:pointer;
+    background: #5DA480;
 }
 .usermessage {
     color:#B5D5C5;

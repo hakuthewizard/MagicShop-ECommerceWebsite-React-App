@@ -6,6 +6,10 @@ import MagicShopItems from './components/MagicShopItems';
 import ShoppingCart from './components/ShoppingCartPage';
 import CartProvider from './components/store/CartProvider';
 import CompleteOrderForm from './components/CompleteOrderPage';
+import AddressAndPayments from './components/AddressAndPayments';
+
+
+
 function App() {
   return (
     <CartProvider>
@@ -15,8 +19,10 @@ function App() {
       <Route path="/" element={<WelcomePage/>} exact/>
       <Route path="/welcomepage" element={<WelcomePage/>}/>
       <Route path="/magicshop" element={<MagicShopItems/>}></Route>
-      <Route path="/magicshoppingcart" element={<ShoppingCart/>}></Route>
+      <Route path="/magicshoppingcart" element={<ShoppingCart key={Math.random()} />
+}></Route>
       <Route path="/loginpage" element={<CompleteOrderForm/>}></Route>
+      <Route path="/addressandpaymentinfo" element={<AddressAndPayments/>}></Route>
       </Routes>
 
     </CartProvider>

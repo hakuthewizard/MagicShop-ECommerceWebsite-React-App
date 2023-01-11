@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import './ShoppingCartPage.css';
-import { useContext } from "react";
+import { useEffect,useContext } from "react";
 import CartContext from './store/cart-context';
 import CartItem from "./CartItem";
 import { NavLink } from "react-router-dom";
 
 const ShoppingCart = (props) => {
     const cartCtx = useContext(CartContext);
+    const [itemsInCart, setItemsInCart] = useState(false);
+    useEffect(() => {
+        const itemsInCart =localStorage.getItem( cartCtx.magicitems);
+
+        if(itemsInCart === '1') {
+            setItemsInCart(true);
+        }
+    
+      }, []);
+    
     
     const totalAmount = `$${cartCtx.magicitems.reduce((acc, item) => acc + item.price * item.amount, 0).toFixed(2)}`;
 
@@ -14,9 +24,12 @@ const ShoppingCart = (props) => {
     
     const cartItemRemoveHandler = id => {
     cartCtx.removeMagicItem(id);
+  
     }
     const cartItemAddHandler = magicitem => {
         cartCtx.addMagicItem({...magicitem, amount:1});
+
+        
     }
     const cartItems = (
         <ul className="shopping-cart-grid-item">
@@ -49,7 +62,7 @@ return(
        
         <span className="shopping-cart-total-and-complete">
             <span>Total ({totalAmount})</span>
-            <NavLink style={{ all: 'unset' }} to="/loginpage" >{hasItems && <button className='complete-order-btn'>Complete Order</button> }</NavLink>
+            <NavLink style={{ all: 'unset' }} to="/addressandpaymentinfo" >{hasItems && <button className='complete-order-btn'>Complete Order</button>}</NavLink>
         </span>
         </section> 
     </div>
