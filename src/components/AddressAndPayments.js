@@ -87,19 +87,19 @@ const AddressAndPayments = () => {
 
         <div className='personal-info'>
             <span>Your Name</span>
-            <input  type="text" placeholder= "your name"  ref={nameRef}/>
+            <input readonly  type="text" placeholder= "your name"  ref={nameRef}/>
             <span className='address-information'>Address Information</span>
-            <input type="text" placeholder= "Adress Line 1"  ref={addressLine1Ref}/>
-            <input type="text" placeholder= "Adress Line 2"  ref={addressLine2Ref}/>
+            <input readonly type="text" placeholder= "Adress Line 1"  ref={addressLine1Ref}/>
+            <input  readonly type="text" placeholder= "Adress Line 2"  ref={addressLine2Ref}/>
 
     
         </div>
 
         <div  className='personal-info'>
             <span className='payment-information'>Payment Details</span>
-            <input placeholder= "name on card" type="text" ref={paymentLine1Ref}/>
-            <input placeholder= "card number" type="number" ref={paymentLine2Ref}/>
-            <span className='payment-info-ccv-date'><input type="date" ref={paymentLine3dateRef}/><input type="number" placeholder= "ccv"  ref={paymentLine3ccvRef}/></span>
+            <input readonly placeholder= "name on card" type="text" ref={paymentLine1Ref}/>
+            <input readonly placeholder= "card number" type="number" ref={paymentLine2Ref}/>
+            <span className='payment-info-ccv-date'><input readonly type="date" ref={paymentLine3dateRef}/><input readonly type="number" placeholder= "ccv"  ref={paymentLine3ccvRef}/></span>
             
             <button onClick={placeOrderHandler} className='checkout-button'>Place Order</button>
             {warning  && <p className='warningmessage'>{warning}</p>}
